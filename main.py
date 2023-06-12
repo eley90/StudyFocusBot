@@ -1,4 +1,10 @@
-""" Here is room No. 2"""
+"""
+Authors: Daniela Cislaru, Elmira Moayedi
+"""
+
+__author__ = 'Daniela Cislaru, Elmira Moayedi'
+
+
 import discord
 import os
 from keep_alive import keep_alive
