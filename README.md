@@ -40,7 +40,7 @@ A discord Bot needs be created, following these steps:
 5. Set Up Your Development Environment: Install Python on your computer if you haven't already. You can download it from the official Python website (https://www.python.org/downloads/). Make sure you have a code editor installed as well, such as Visual Studio Code, PyCharm, or Atom or you can use an online integrated development environment.
 6. Install the Discord.py Library: Open a terminal or command prompt and run the following command to install the Discord.py library:     pip install discord.py
 7. Paste all the .py files in this repository in your project for the needed libraries see the requirements.txt .
-8. Use the Bot Token: in main.py place the Token you copied earlier in the place says ‘TOKEN’, if you have not save the Token in a environment variable, please delete the "os.getenv()" and just paste the token in the "client.run('TOKEN')" directly.
+8. Use the Bot Token: in main.py place the Token you copied earlier in the place says "TOKEN", if you have not save the Token in a environment variable, please delete the "os.getenv()" and just paste the token in the "client.run('TOKEN')" directly.
 9. Channel_id : go to your Discord server and right click on the general channel, copy the channel_id and paste it in the main.py I all the places that say ‘channel_id”.
 
 
