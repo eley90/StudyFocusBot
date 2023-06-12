@@ -10,7 +10,7 @@ This project was developed by **Elmira Moayedi** and **Daniela Cislaru** to simu
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
+- [Functions](#functions)
 
 
 ## Project Description
@@ -49,9 +49,10 @@ A discord Bot needs be created, following these steps:
 
 Provide examples and instructions on how to use your project. You can include code snippets, screenshots, or even GIFs to demonstrate the functionality. Make sure to explain any important configuration or settings that the user needs to be aware of.
 
-## Features
+## Functions
 
 :warning:Available commands:
+
 :arrow_right: **start** - to start a study session
 
 :arrow_right: **task** followed by the task itself - to enter the task for the session
