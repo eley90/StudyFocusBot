@@ -51,13 +51,13 @@ async def check_achievements(user):
                 previous_avg = sum([ach.value for ach in previous_achievements]) / len(previous_achievements)
                 if last_achievement.value > previous_avg:
                     await channel.send(
-                        f"{user.user_name} Congratulations! Your achievement in the last study session is better than your average achievements in previous sessions.")
+                        f"{user.user_name} Congratulations! Your achievement in this study session is better than your average achievements in previous sessions.")
                 elif last_achievement.value < previous_avg:
                     await channel.send(
-                        f"{user.user_name} Your achievement in the last study session is lower than your average achievements in previous sessions. Keep up the good work and improve!")
+                        f"{user.user_name} Your achievement in this study session is lower than your average achievements in previous sessions. Keep up the good work and improve!")
                 else:
                     await channel.send(
-                        f" {user.user_name}Your achievement in the last study session is the same as your average achievements in previous sessions. Keep up the good work!")
+                        f" {user.user_name}Your achievement in this study session is the same as your average achievements in previous sessions. Keep up the good work!")
             else:
                 await channel.send(
                     f" {user.user_name} This is your first study session. Keep up the good work and improve!")
@@ -125,22 +125,17 @@ async def on_message(message):
             user_temp.comp_tasks = float(msg)
             points = user_temp.calculate_points(study_session=study_session)
 
-            dana = await client.fetch_user('757894678027698197')
-            elmira = await client.fetch_user('439071369163046913')
+            
 
             await message.channel.send('{} your points:\t{}'.format(
                 user_temp.user_name, points))
 
             await check_achievements(user_temp)
-            channel = client.get_channel(1090673713374044273)
+            channel = client.get_channel('CHANNEL_Id')
             await channel.send(embed=discord.Embed(
                 description=f"** {user_temp.user_name} Please provide a brief summary to your study partner about the tasks and materials you learned in the session**",
                 color=discord.Color.red()))
-            if float(points):
-                await dana.send('{} user: {} has accumulated {} points'.format(
-                    date.today(), user_temp, points))
-                await elmira.send('{} user: {} has accumulated {} points'.format(
-                    date.today(), user_temp, points))
+            
 
         if msg.__eq__('1') and (str(author.id) not in users) and not end_flag:
             user = User(str(author), author.id)
@@ -187,7 +182,7 @@ async def on_message(message):
                 await user_2.send("This is a reminder to check on your study partner!")
 
         elif msg.__eq__('p') and not end_flag and start_flag:
-            voice_channel = client.get_channel(1090673713374044275)
+            voice_channel = client.get_channel('Voice_channel')
             if len(users) == 2:
                 for user_id in users:
                     if user_id != str(author.id):
