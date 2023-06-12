@@ -57,13 +57,13 @@ Provide examples and instructions on how to use your project. You can include co
 
 :arrow_right: **task** followed by the task itself - to enter the task for the session
 
-Example: > task: read chapter 1 or > task do exercise 1
+Example: <task: read chapter 1> or  <task do exercise 1>
 
 :arrow_right: **show** - to have an overview of your current tasks
 
 :arrow_right: **del** followed by the task - to delete a task
 
-Example: del read chapter 1
+Example: <del read chapter 1>
 
 :arrow_right: **p** - to send an angry notification if your study partner is distracted
 
