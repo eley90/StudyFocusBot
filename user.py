@@ -49,9 +49,6 @@ class User(Base):
 
         After updating, the changes are committed to the session.
 
-        Note:
-            The session object should be available in the current scope.
-
         """
         if self.user_credit_points > 0:
             self.user_credit_points -= 1
@@ -78,9 +75,6 @@ class User(Base):
             task_name (str): The name of the task to be added.
             study_session (StudySession): The study session associated with the task.
 
-        Note:
-            The session object should be available in the current scope.
-
         """
         task_db = session.query(Task).filter(Task.name == task_name).filter(
             Task.study_session_id == study_session.id).filter(Task.user_id == self.user_id).one_or_none()
@@ -101,8 +95,6 @@ class User(Base):
         Returns:
             str: A message indicating whether the task was successfully deleted or not.
 
-        Note:
-            The session object should be available in the current scope.
         """
         task_db_to_delete = session.query(Task).filter(Task.name == task_name).filter(
             Task.study_session_id == study_session.id).filter(Task.user_id == self.user_id).one_or_none()
@@ -154,7 +146,7 @@ class StudySession(Base):
 
 class Task(Base):
     """
-        Represents a task associated with a user in the system.
+    Represents a task associated with a user in the system.
     """
     __tablename__ = 'user_tasks'
     tid = Column('task_id', Integer, primary_key=True)
