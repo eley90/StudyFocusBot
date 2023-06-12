@@ -43,7 +43,9 @@ A discord Bot needs be created, following these steps:
 8. Use the Bot Token: in main.py place the Token you copied earlier in the place says "TOKEN", if you have not save the Token in a environment variable, please delete the "os.getenv()" and just paste the token in the "client.run('TOKEN')" directly.
 9. Channel_id : go to your Discord server and right click on the general channel, copy the channel_id and paste it in the main.py I all the places that say ‘channel_id”.
 
-
+## An easier way!!!
+The code has been uploaded to Replit, and we have provided a link for your convenience - https://replit.com/join/llskadeepe-elmiramoayedi
+To get started, you simply need to input the necessary data from your Discord server, as mentioned above.
 
 ## Usage
 
