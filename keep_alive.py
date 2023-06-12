@@ -1,3 +1,10 @@
+"""
+Authors: Daniela Cislaru, Elmira Moayedi
+"""
+
+__author__ = 'Daniela Cislaru, Elmira Moayedi'
+
+
 from flask import Flask
 from threading import Thread
 
