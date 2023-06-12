@@ -10,7 +10,7 @@ from user import User, session, StudySession, Achievement
 
 client = discord.Client(intents=discord.Intents.all())
 
-users = dict()  # has this structure {'user_id': user obj}
+users = dict()  # Has this structure {'user_id': user obj}
 end_flag = True
 start_flag = False
 study_session = None
