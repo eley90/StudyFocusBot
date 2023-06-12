@@ -2,7 +2,7 @@
 
 # StudyFocusBot
 
-This project was developed to simulate a study platform for bachelor thesis of Elmira Moayedi and Daniela Cislaru , this Discord bot creates a structured and gamified approach to studying, providing users with a sense of accountability, motivation, and feedback to help them achieve their study goals.
+This project was developed by **Elmira Moayedi** and **Daniela Cislaru** to simulate a study platform for their bachelor theses, this Discord bot creates a structured and gamified approach to studying, providing users with a sense of accountability, motivation, and feedback to help them achieve their study goals.
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@ This project was developed to simulate a study platform for bachelor thesis of E
 
 ## Project Description
 
-The Discord bot you developed serves as a simulated controlled environment for partner studying. It offers several functions to facilitate and enhance the studying experience.
+This Discord bot serves as a simulated controlled environment for partner studying. It offers several functions to facilitate and enhance the studying experience.
 One of the primary features of the bot is to help users keep track of their study goals. Users can set specific tasks or goals they want to accomplish during their study session. The bot then allows them to log their progress as they complete these tasks. It maintains a record of the tasks and their completion status in a local database file.
 The bot also introduces a credit point system to simulate rewards and consequences for the users' studying efforts. Users earn credit points for completing tasks and making progress towards their study goals. These credit points serve as a form of motivation and recognition for their achievements.
 On the other hand, users can also lose credit points if they fail to complete their tasks or neglect their study responsibilities. This aspect of the bot encourages users to stay committed and disciplined in their study sessions.
@@ -56,7 +56,5 @@ Provide examples and instructions on how to use your project. You can include co
 
 :warning:Available commands:\n:arrow_right: **start** - to start a study session\n:arrow_right: **task** followed by the task itself - to enter the task for the session\nEx: task: read chapter 1 or task do exercise 1\n:arrow_right: **show** - to have an overview of your current tasks\n:arrow_right: **del** followed by the task - to delete a task\nEx: del read chapter 1\n:arrow_right: **p** - to send an angry notification if your study partner is distracted\n__also available in the chat from the voice-channel__\n:arrow_right: **end** - to end the study session\n:exclamation: You will receive a reminder towards the end of the study session that it is ending.
 
-## Contributing
 
-Explain how others can contribute to your project. Include guidelines for reporting issues, submitting pull requests, and any other relevant information.
 
