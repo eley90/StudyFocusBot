@@ -47,9 +47,6 @@ A discord Bot needs be created, following these steps:
 The code has been uploaded to Replit, and we have provided a link for your convenience - https://replit.com/join/llskadeepe-elmiramoayedi
 To get started, you simply need to input the necessary data from your Discord server, as mentioned above.
 
-## Usage
-
-Provide examples and instructions on how to use your project. You can include code snippets, screenshots, or even GIFs to demonstrate the functionality. Make sure to explain any important configuration or settings that the user needs to be aware of.
 
 ## Functions
 
