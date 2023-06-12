@@ -57,7 +57,7 @@ Provide examples and instructions on how to use your project. You can include co
 
 :arrow_right: **task** followed by the task itself - to enter the task for the session
 
-Example: >task: read chapter 1 or >task do exercise 1
+Example: <task: read chapter 1> or <task do exercise 1>
 
 :arrow_right: **show** - to have an overview of your current tasks
 
