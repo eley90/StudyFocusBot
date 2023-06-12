@@ -1,3 +1,10 @@
+"""
+Authors: Daniela Cislaru, Elmira Moayedi
+"""
+
+__author__ = 'Daniela Cislaru, Elmira Moayedi'
+
+
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Float, create_engine
 from sqlalchemy.orm import relationship, sessionmaker
